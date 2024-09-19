@@ -1,6 +1,8 @@
 #ifndef WLPINYIN_H
 #define WLPINYIN_H
 
+#define NDEBUG
+
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
