@@ -319,6 +319,9 @@ struct wlpinyin_state *im_setup(int signalfd, struct wl_display *display) {
 		goto clean;
 	}
 
+	// toggle to english
+	im_engine_toggle(state->engine);
+
 	state->xkb_context = xkb_context_new(XKB_CONTEXT_NO_FLAGS);
 	if (state->xkb_context == NULL) {
 		wlpinyin_err("failed to setup xkb context");
